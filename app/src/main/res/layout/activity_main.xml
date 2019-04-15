@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/r_layout"
+        android:layout_width="205dp"
+        android:layout_height="207dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pk"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="327dp"
+        android:layout_alignBottom="@id/r_layout"
+        android:layout_marginBottom="-343dp"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="TEAM A"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/PA"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Players:7"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="25sp"/>
+
+            <Button
+                android:layout_width="132dp"
+                android:layout_height="74dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="POINT"
+                android:background="#071FF9"
+                android:onClick="point_A"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:id="@+id/SA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Score:0"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/V1"
+            android:layout_width="1dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:id="@+id/L2"
+            android:layout_width="1dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="TEAM B"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/PB"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Players:7"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="25sp"/>
+
+            <Button
+                android:layout_width="132dp"
+                android:layout_height="74dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="POINT"
+                android:onClick="point_B"
+                android:textStyle="bold"
+                android:background="#071FF9"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:id="@+id/SB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Score:0"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/V1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="578dp"
+        android:layout_marginBottom="-61dp"
+        tools:ignore="HardcodedText,NotSibling"
+        android:text="Reset"
+        android:onClick="reset"
+        android:textSize="25sp"/>
+</RelativeLayout>
